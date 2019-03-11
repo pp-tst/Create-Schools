@@ -1235,5 +1235,15 @@ select {
   max-width: 100%;
   overflow: hidden; }
 
+.page-wrap {
+  max-width: 80rem;
+  margin: 0 auto; }
+
 a {
   text-decoration: underline; }
+
+.header {
+  position: relative; }
+  .header .logo {
+    position: absolute;
+    margin: 0.83333rem; }

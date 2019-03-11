@@ -17,6 +17,20 @@
   overflow: hidden;
 }
 
+.page-wrap{
+  max-width: $global-width;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: underline;
+}
+
+//header
+.header{
+  position: relative;
+  .logo{
+    position: absolute;
+    margin: $grid-column-gutter/2;
+  }
 }
