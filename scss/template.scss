@@ -36,3 +36,13 @@ a {
   }
 }
 //menu-button
+.menu-button{
+  background: $green;
+  color: $white;
+  padding: $grid-column-gutter/4;
+  .symbol{
+    width: rem-calc(40);
+    height: rem-calc(40);
+
+  }
+}

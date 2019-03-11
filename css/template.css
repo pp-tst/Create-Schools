@@ -557,7 +557,7 @@ h6, .h6 {
   font-family: Calibri;
   font-style: normal;
   font-weight: normal;
-  color: #0f2d5d;
+  color: #204773;
   text-rendering: optimizeLegibility; }
   h1 small, .h1 small,
   h2 small, .h2 small,
@@ -630,11 +630,11 @@ h6, .h6 {
 
 a {
   line-height: inherit;
-  color: #0f2d5d;
+  color: #204773;
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #0d2750; }
+    color: #1c3d63; }
   a img {
     border: 0; }
 
@@ -1247,3 +1247,11 @@ a {
   .header .logo {
     position: absolute;
     margin: 0.83333rem; }
+
+.menu-button {
+  background: #39686A;
+  color: #ffffff;
+  padding: 0.41667rem; }
+  .menu-button .symbol {
+    width: 2.22222rem;
+    height: 2.22222rem; }
