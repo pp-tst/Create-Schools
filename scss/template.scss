@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-.page-wrap{
+.page-wrap {
   max-width: $global-width;
   margin: 0 auto;
 }
@@ -25,12 +25,14 @@
 a {
   text-decoration: underline;
 }
-
 //header
-.header{
+
+.header {
   position: relative;
-  .logo{
+
+  .logo {
     position: absolute;
     margin: $grid-column-gutter/2;
   }
 }
+//menu-button
