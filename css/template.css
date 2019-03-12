@@ -14,6 +14,7 @@
      * 3. Prevent adjustments of font size after orientation changes in
      *    IE on Windows Phone and in iOS.
      */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -735,6 +736,18 @@ ul.no-bullet, ol.no-bullet {
   margin-left: 0;
   list-style: none; }
 
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
 @media print, screen and (min-width: 40em) {
   .medium-text-left {
     text-align: left; }
@@ -1102,6 +1115,14 @@ select {
 .invisible {
   visibility: hidden; }
 
+@media screen and (max-width: 39.9375em) {
+  .hide-for-small-only {
+    display: none !important; } }
+
+@media screen and (max-width: 0em), screen and (min-width: 40em) {
+  .show-for-small-only {
+    display: none !important; } }
+
 @media print, screen and (min-width: 40em) {
   .hide-for-medium {
     display: none !important; } }
@@ -1248,6 +1269,9 @@ a {
     position: absolute;
     margin: 0.83333rem; }
 
+.nav-bar {
+  position: relative; }
+
 .menu-button {
   background: #39686A;
   color: #ffffff;
@@ -1255,3 +1279,57 @@ a {
   .menu-button .symbol {
     width: 2.22222rem;
     height: 2.22222rem; }
+
+.main-menu {
+  list-style-type: none;
+  margin: 0; }
+  .main-menu .orange {
+    border-left: 55px solid #F29400; }
+    .main-menu .orange:focus, .main-menu .orange:hover {
+      background: #FFEDD0; }
+  .main-menu .rosa {
+    border-left: 55px solid #986566; }
+    .main-menu .rosa:focus, .main-menu .rosa:hover {
+      background: #E3D5D5; }
+  .main-menu .blue {
+    border-left: 55px solid #204773; }
+    .main-menu .blue:focus, .main-menu .blue:hover {
+      background: #D2E1F3; }
+  .main-menu .olive {
+    border-left: 55px solid #9A9966; }
+    .main-menu .olive:focus, .main-menu .olive:hover {
+      background: #DEDDCC; }
+  .main-menu .red {
+    border-left: 55px solid #981134; }
+    .main-menu .red:focus, .main-menu .red:hover {
+      background: #FBDFE7; }
+  .main-menu .turquoise {
+    border-left: 55px solid #9AB3AF; }
+    .main-menu .turquoise:focus, .main-menu .turquoise:hover {
+      background: #DEE6E5; }
+  .main-menu a {
+    padding: 0.83333rem;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #39686A;
+    font-size: 0.88889rem;
+    font-family: 'Noto Sans', sans-serif; }
+
+.lang-menu {
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .lang-menu li {
+    display: inline; }
+    .lang-menu li a {
+      padding: 0.83333rem;
+      display: inline-block;
+      text-decoration: none;
+      color: #39686A;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.88889rem; }
+      .lang-menu li a:hover, .lang-menu li a:focus {
+        background: #E4F0F1; }

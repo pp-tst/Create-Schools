@@ -7,6 +7,7 @@
 @include foundation-forms;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 %clearfix {
   @include clearfix();
@@ -35,14 +36,115 @@ a {
     margin: $grid-column-gutter/2;
   }
 }
+
+//Navigationen
+
+.nav-bar{
+  position: relative;
+}
+
 //menu-button
-.menu-button{
+
+.menu-button {
   background: $green;
   color: $white;
   padding: $grid-column-gutter/4;
-  .symbol{
+
+  .symbol {
     width: rem-calc(40);
     height: rem-calc(40);
+  }
+}
+//main-menu
 
+.main-menu {
+  list-style-type: none;
+  margin: 0;
+
+  .orange {
+    border-left: 55px solid $orange;
+
+    &:focus,
+    &:hover {
+      background: $hover-orange;
+    }
+  }
+
+  .rosa {
+    border-left: 55px solid $rosa;
+
+    &:focus,
+    &:hover {
+      background: $hover-rosa;
+    }
+  }
+
+  .blue {
+    border-left: 55px solid $blue;
+
+    &:focus,
+    &:hover {
+      background: $hover-blue;
+    }
+  }
+
+  .olive {
+    border-left: 55px solid $olive;
+
+    &:focus,
+    &:hover {
+      background: $hover-olive;
+    }
+  }
+
+  .red {
+    border-left: 55px solid $red;
+
+    &:focus,
+    &:hover {
+      background: $hover-red;
+    }
+  }
+
+  .turquoise {
+    border-left: 55px solid $turquoise;
+
+    &:focus,
+    &:hover {
+      background: $hover-turquoise;
+    }
+  }
+
+  a {
+    padding: $grid-column-gutter/2;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $green;
+    font-size: rem-calc(16);
+    font-family: 'Noto Sans', sans-serif;
+  }
+}
+//lang-menu
+.lang-menu {
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  li{
+    display: inline;
+    a{
+      padding: $grid-column-gutter/2;
+      display: inline-block;
+      text-decoration: none;
+      color: $green;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: rem-calc(16);
+      &:hover,
+      &:focus{
+        background: $hover-green;
+      }
+    }
   }
 }
