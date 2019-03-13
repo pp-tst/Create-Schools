@@ -36,13 +36,11 @@ a {
     margin: $grid-column-gutter/2;
   }
 }
-
 //Navigationen
 
-.nav-bar{
+.nav-bar {
   position: relative;
 }
-
 //menu-button
 
 .menu-button {
@@ -55,14 +53,23 @@ a {
     height: rem-calc(40);
   }
 }
+@include breakpoint(large) {
+  .menu-button {
+    display: none;
+  }
+}
 //main-menu
 
 .main-menu {
   list-style-type: none;
   margin: 0;
 
+  li {
+    border-left: rem-calc(55) solid;
+  }
+
   .orange {
-    border-left: 55px solid $orange;
+    border-color: $orange;
 
     &:focus,
     &:hover {
@@ -71,7 +78,7 @@ a {
   }
 
   .rosa {
-    border-left: 55px solid $rosa;
+    border-color: $rosa;
 
     &:focus,
     &:hover {
@@ -80,7 +87,7 @@ a {
   }
 
   .blue {
-    border-left: 55px solid $blue;
+    border-color: $blue;
 
     &:focus,
     &:hover {
@@ -89,7 +96,7 @@ a {
   }
 
   .olive {
-    border-left: 55px solid $olive;
+    border-color: $olive;
 
     &:focus,
     &:hover {
@@ -98,7 +105,7 @@ a {
   }
 
   .red {
-    border-left: 55px solid $red;
+    border-color: $red;
 
     &:focus,
     &:hover {
@@ -107,7 +114,7 @@ a {
   }
 
   .turquoise {
-    border-left: 55px solid $turquoise;
+    border-color: $turquoise;
 
     &:focus,
     &:hover {
@@ -125,25 +132,49 @@ a {
     font-family: 'Noto Sans', sans-serif;
   }
 }
+@include breakpoint(large) {
+  .main-menu {
+    li {
+      float: left;
+      width: rem-calc(130);
+      border-left: 0;
+      border-top: rem-calc(25) solid;
+      text-align: center;
+    }
+  }
+}
 //lang-menu
+
 .lang-menu {
   list-style-type: none;
   margin: 0;
   position: absolute;
   top: 0;
   right: 0;
-  li{
+
+  li {
     display: inline;
-    a{
+
+    a {
       padding: $grid-column-gutter/2;
       display: inline-block;
       text-decoration: none;
       color: $green;
       font-family: 'Noto Sans', sans-serif;
       font-size: rem-calc(16);
-      &:hover,
-      &:focus{
+
+      &:focus,
+      &:hover {
         background: $hover-green;
+      }
+    }
+  }
+}
+@include breakpoint(large) {
+  .lang-menu {
+    li {
+      a {
+        padding: $grid-column-gutter/4;
       }
     }
   }
