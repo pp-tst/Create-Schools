@@ -1299,3 +1299,39 @@ a {
 @media print, screen and (min-width: 55.625em) {
   .lang-menu li a {
     padding: 0.41667rem; } }
+
+.main {
+  display: inline-block; }
+
+.fb {
+  color: #39686A;
+  position: absolute;
+  right: 0;
+  padding-right: 0.83333rem; }
+  .fb:focus, .fb:hover {
+    color: #3B5998; }
+  .fb svg {
+    width: 2.5rem;
+    height: 2.5rem; }
+
+.tiles {
+  margin-top: 3.33333rem;
+  padding: 0 0.83333rem; }
+  .tiles .orange {
+    background: #F29400; }
+  .tiles .turquoise {
+    background: #9AB3AF; }
+  .tiles .red {
+    background: #981134; }
+
+.tile {
+  padding: 1.66667rem 0.83333rem; }
+
+.head-ttl h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.66667rem; }
+
+.head-ttl .subtitle {
+  color: #ffffff;
+  font-size: 1.11111rem; }

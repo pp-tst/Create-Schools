@@ -179,3 +179,61 @@ a {
     }
   }
 }
+//main
+
+.main {
+  display: inline-block;
+}
+
+.fb {
+  color: $green;
+  position: absolute;
+  right: 0;
+  padding-right: $grid-column-gutter/2;
+
+  &:focus,
+  &:hover {
+    color: #3B5998;
+  }
+
+  svg {
+    width: rem-calc(45);
+    height: rem-calc(45);
+  }
+}
+
+.tiles {
+  margin-top: $grid-column-gutter*2;
+  padding: 0 $grid-column-gutter/2;
+
+  .orange {
+    background: $orange;
+  }
+
+  .turquoise {
+    background: $turquoise;
+  }
+
+  .red {
+    background: $red;
+  }
+}
+
+.tile {
+  padding: $grid-column-gutter $grid-column-gutter/2;
+}
+
+.head-ttl {
+
+
+  h2 {
+    color: $white;
+    text-transform: uppercase;
+    font-size: rem-calc(30);
+  }
+
+  .subtitle {
+    color: $white;
+    font-size: rem-calc(20);
+  }
+}
