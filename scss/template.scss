@@ -7,7 +7,9 @@
 @include foundation-forms;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
+
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
 
 %clearfix {
   @include clearfix();
@@ -220,20 +222,33 @@ a {
 }
 
 .tile {
-  padding: $grid-column-gutter $grid-column-gutter/2;
+  padding: $grid-column-gutter;
+
+  .t-link {
+    text-decoration: none;
+  }
 }
 
 .head-ttl {
-
-
   h2 {
     color: $white;
     text-transform: uppercase;
     font-size: rem-calc(30);
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: $grid-column-gutter/6;
   }
 
   .subtitle {
     color: $white;
     font-size: rem-calc(20);
+    font-family: 'PT Serif', serif;
+    margin-bottom: $grid-column-gutter/2;
+    display: block;
+  }
+
+  p{
+    color: $white;
+    font-size: rem-calc(16);
+    font-family: 'Noto Sans', sans-serif;
   }
 }

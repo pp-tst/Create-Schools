@@ -15,6 +15,7 @@
      *    IE on Windows Phone and in iOS.
      */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1325,13 +1326,25 @@ a {
     background: #981134; }
 
 .tile {
-  padding: 1.66667rem 0.83333rem; }
+  padding: 1.66667rem; }
+  .tile .t-link {
+    text-decoration: none; }
 
 .head-ttl h2 {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 1.66667rem; }
+  font-size: 1.66667rem;
+  font-family: 'Noto Sans', sans-serif;
+  margin-bottom: 0.27778rem; }
 
 .head-ttl .subtitle {
   color: #ffffff;
-  font-size: 1.11111rem; }
+  font-size: 1.11111rem;
+  font-family: 'PT Serif', serif;
+  margin-bottom: 0.83333rem;
+  display: block; }
+
+.head-ttl p {
+  color: #ffffff;
+  font-size: 0.88889rem;
+  font-family: 'Noto Sans', sans-serif; }
