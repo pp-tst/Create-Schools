@@ -29,11 +29,41 @@ a {
   text-decoration: underline;
 }
 //header
-.main-nav{
-  .menu-button{
-    svg{
-      width: $grid-column-gutter*2;
-      height: $grid-column-gutter*2;
+.header{
+
+}
+
+//menu-button
+.menu-button {
+
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+
+  &:focus,
+  &:hover {
+    .s-icon {
+      background: $light-blue;
+    }
+
+    .symbol {
+      color: $dark-blue;
     }
   }
+
+  .menu-button-label {
+    color: $black;
+    font-size: rem-calc(21);
+    margin-right: $grid-column-gutter / 4;
+  }
+  .symbol{
+    width: $grid-column-gutter*2;
+    height: $grid-column-gutter*2;
+  }
+}
+
+//main-menu
+.main-menu{
+
 }

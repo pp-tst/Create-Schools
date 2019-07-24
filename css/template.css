@@ -1212,6 +1212,23 @@ select {
 a {
   text-decoration: underline; }
 
-.main-nav .menu-button svg {
-  width: 3.33333rem;
-  height: 3.33333rem; }
+.menu-button {
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .menu-button:focus .s-icon, .menu-button:hover .s-icon {
+    background: #caeaf9; }
+  .menu-button:focus .symbol, .menu-button:hover .symbol {
+    color: #003d5a; }
+  .menu-button .menu-button-label {
+    color: #000000;
+    font-size: 1.16667rem;
+    margin-right: 0.41667rem; }
+  .menu-button .symbol {
+    width: 3.33333rem;
+    height: 3.33333rem; }
